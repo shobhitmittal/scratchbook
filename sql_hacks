@@ -1,0 +1,10 @@
+https://www.hackerrank.com/challenges/weather-observation-station-20/problem
+https://stackoverflow.com/questions/1291152/simple-way-to-calculate-median-with-mysql
+SELECT ROUND(AVG(dd.LAT_N), 4)
+FROM (
+SELECT d.LAT_N, @rownum:=@rownum+1 as `row_number`, @total_rows:=@rownum
+  FROM station d, (SELECT @rownum:=0) r
+  ORDER BY d.LAT_N
+) as dd
+WHERE dd.row_number IN ( FLOOR((@total_rows+1)/2), FLOOR((@total_rows+2)/2) );
+
