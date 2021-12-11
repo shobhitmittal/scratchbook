@@ -18,5 +18,7 @@
 				- [Algorithm implementation Python by Keon](https://github.com/keon/algorithms)
 			- Awesome
 				- [Awesome Algorithm](https://github.com/tayllan/awesome-algorithms)
+	- SRE
+		- [School of SRE](https://github.com/linkedin/school-of-sre)
 	- General
 		- [Awesome CS Courses](https://github.com/prakhar1989/awesome-courses)
